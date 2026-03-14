@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -28,7 +27,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* particles */
+/* background particles */
 
 #particles-js{
 position:fixed;
@@ -52,7 +51,7 @@ nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
-transition:.3s;
+transition:0.3s;
 }
 
 nav a:hover{
@@ -72,12 +71,19 @@ padding:20px;
 }
 
 .avatar{
-width:150px;
-height:150px;
+width:170px;
+height:170px;
 border-radius:50%;
 object-fit:cover;
 margin-bottom:20px;
-border:3px solid #38bdf8;
+border:4px solid #38bdf8;
+box-shadow:0 0 25px #38bdf8;
+transition:0.4s;
+}
+
+.avatar:hover{
+transform:scale(1.08);
+box-shadow:0 0 45px #38bdf8;
 }
 
 .hero h1{
@@ -93,8 +99,8 @@ color:#38bdf8;
 
 .hero p{
 margin-top:10px;
-font-size:20px;
-opacity:.8;
+font-size:22px;
+opacity:0.85;
 }
 
 /* button */
@@ -107,7 +113,7 @@ border-radius:30px;
 text-decoration:none;
 color:white;
 font-weight:600;
-transition:.3s;
+transition:0.3s;
 }
 
 .btn:hover{
@@ -123,6 +129,7 @@ padding:80px 10%;
 .section h2{
 text-align:center;
 margin-bottom:40px;
+font-size:32px;
 }
 
 /* skills */
@@ -135,8 +142,8 @@ gap:25px;
 }
 
 .skills img{
-width:60px;
-transition:.3s;
+width:65px;
+transition:0.3s;
 }
 
 .skills img:hover{
@@ -156,7 +163,7 @@ background:rgba(255,255,255,0.05);
 backdrop-filter:blur(10px);
 padding:25px;
 border-radius:15px;
-transition:.3s;
+transition:0.3s;
 }
 
 .card:hover{
@@ -174,15 +181,10 @@ text-decoration:none;
 text-align:center;
 }
 
-.socials{
-margin-top:20px;
-}
-
 .socials a{
 margin:10px;
-font-size:22px;
 color:white;
-text-decoration:none;
+font-size:18px;
 }
 
 /* footer */
@@ -190,7 +192,7 @@ text-decoration:none;
 footer{
 text-align:center;
 padding:40px;
-opacity:.6;
+opacity:0.6;
 }
 
 /* mobile */
@@ -202,8 +204,8 @@ font-size:40px;
 }
 
 .avatar{
-width:120px;
-height:120px;
+width:130px;
+height:130px;
 }
 
 }
@@ -272,7 +274,7 @@ height:120px;
 
 </section>
 
-<!-- STATS -->
+<!-- GITHUB STATS -->
 
 <section class="section">
 
@@ -298,11 +300,9 @@ height:120px;
 
 <p>Email: yourmail@gmail.com</p>
 
-<div class="socials">
+<br>
 
-<a href="https://github.com/khanhlinh081">GitHub</a>
-
-</div>
+<a class="btn" href="https://github.com/khanhlinh081">GitHub</a>
 
 </section>
 
@@ -314,7 +314,7 @@ height:120px;
 
 <script>
 
-/* typing */
+/* typing animation */
 
 const text=["Data Analyst","Business Student","Machine Learning Learner"]
 
@@ -345,14 +345,16 @@ type()
 /* particles */
 
 particlesJS("particles-js",{
+
 particles:{
 number:{value:80},
 size:{value:3},
 move:{speed:2}
 }
+
 })
 
-/* github projects */
+/* github repos */
 
 const username="khanhlinh081"
 
