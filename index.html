@@ -206,10 +206,7 @@ opacity:0.6;
 
 <div class="projects">
 
-<div class="card">
-<h3>EDA Project</h3>
-<p>Exploratory data analysis using Python.</p>
-</div>
+<div class="projects" id="projects"></div>
 
 <div class="card">
 <h3>Marketing Analysis</h3>
@@ -297,3 +294,28 @@ move:{speed:2}
 
 </body>
 </html>
+const username="khanhlinh081"
+
+fetch(`https://api.github.com/users/${username}/repos`)
+.then(res=>res.json())
+.then(data=>{
+
+const container=document.getElementById("projects")
+
+data.slice(0,6).forEach(repo=>{
+
+const card=document.createElement("div")
+
+card.className="card"
+
+card.innerHTML=`
+<h3>${repo.name}</h3>
+<p>${repo.description || "GitHub Project"}</p>
+<a href="${repo.html_url}" target="_blank">View Project</a>
+`
+
+container.appendChild(card)
+
+})
+
+})
