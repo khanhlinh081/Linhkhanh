@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F7FD5,100:86A8E7&height=200&section=header&text=Khanh%20Linh%20GitHub%20Portfolio&fontSize=40&fontColor=ffffff"/>
+</p>
 <h1 align="center">Hi 👋 I'm Khanh Linh</h1>
 
 <p align="center">
@@ -63,3 +66,6 @@
 ---
 
 ⭐ *Learning something new every day.*
+## 🐍 Contribution Snake
+
+![snake gif](https://github.com/khanhlinh081/khanhlinh081/blob/output/github-contribution-grid-snake.svg)
