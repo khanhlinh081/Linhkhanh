@@ -26,7 +26,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* PARTICLES BACKGROUND */
+/* PARTICLES */
 
 #particles-js{
 position:fixed;
@@ -145,6 +145,11 @@ transition:0.3s;
 transform:translateY(-10px);
 }
 
+.card a{
+color:#38bdf8;
+text-decoration:none;
+}
+
 /* FOOTER */
 
 footer{
@@ -204,21 +209,7 @@ opacity:0.6;
 
 <h2>Projects</h2>
 
-<div class="projects">
-
 <div class="projects" id="projects"></div>
-
-<div class="card">
-<h3>Marketing Analysis</h3>
-<p>Marketing data analysis project.</p>
-</div>
-
-<div class="card">
-<h3>Business Research</h3>
-<p>International business research.</p>
-</div>
-
-</div>
 
 </section>
 
@@ -237,6 +228,7 @@ opacity:0.6;
 </p>
 
 </section>
+
 <section class="section">
 
 <h2>Contribution Graph</h2>
@@ -246,13 +238,16 @@ opacity:0.6;
 <img src="https://raw.githubusercontent.com/khanhlinh081/Linhkhanh/output/github-contribution-grid-snake.svg">
 
 </p>
+
+</section>
+
 <section class="section">
 
 <h2>Contact</h2>
 
 <p style="text-align:center">
 
-Email: yourmail@gmail.com
+Email: klinhh888@gmail.com
 
 <br><br>
 
@@ -272,7 +267,7 @@ Email: yourmail@gmail.com
 
 /* typing animation */
 
-const text = ["Data Analyst","Business Student","Machine Learning Learner"]
+const text=["Data Analyst","Business Student","Machine Learning Learner"]
 
 let count=0
 let index=0
@@ -305,14 +300,15 @@ type()
 /* particles */
 
 particlesJS("particles-js",{
-
 particles:{
 number:{value:80},
 size:{value:3},
 move:{speed:2}
 }
-
 })
+
+/* load github repos */
+
 const username="khanhlinh081"
 
 fetch(`https://api.github.com/users/${username}/repos`)
@@ -338,6 +334,7 @@ container.appendChild(card)
 })
 
 })
+
 </script>
 
 </body>
