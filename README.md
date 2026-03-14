@@ -56,7 +56,7 @@
 
 ## 🌍 Connect With Me
 
-📧 Email: your-email@gmail.com  
+📧 Email: klinhh888@gmail.com  
 
 💻 GitHub: https://github.com/khanhlinh081
 
